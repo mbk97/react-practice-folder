@@ -1,0 +1,14 @@
+{
+  "club_data": [
+    {
+      "id": 1,
+      "football_club": "Chelsea",
+      "name": "Kovacic"
+    },
+    {
+      "id": 2,
+      "football_club": "Arsenal",
+      "name": "Odegard"
+    }
+  ]
+}

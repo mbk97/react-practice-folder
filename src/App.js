@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { UserContext } from "./ContextPractice/ContextSetup";
+import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
 
-function App() {
+const App = () => {
+  const [name, setName] = useState("Mubarak");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={{ name, setName }}>
+      <div className="bg-[rgba(0,0,0,5)] h-[100vh] text-[white]">
+        <ToastContainer />
+        <InfiniteScroll />
+      </div>
+    </UserContext.Provider>
   );
-}
+};
 
 export default App;
