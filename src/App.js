@@ -3,15 +3,27 @@ import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UserContext } from "./ContextPractice/ContextSetup";
-import InfiniteScroll from "./InfiniteScroll/InfiniteScroll";
+import { Auth0Provider } from "@auth0/auth0-react";
+import FilterRender from "./filterTable/FilterRender";
+import FramerMotion from "./FramerMotion/FramerMotion";
+import MainTab from "./tabs/MainTab";
+import { data } from "./tabs/data";
 
 const App = () => {
   const [name, setName] = useState("Mubarak");
+  const [activeTab, setActiveTab] = useState(1);
+
   return (
     <UserContext.Provider value={{ name, setName }}>
-      <div className="bg-[rgba(0,0,0,5)] h-[100vh] text-[white]">
-        <ToastContainer />
-        <InfiniteScroll />
+      <div className="bg-[white] h-[100vh] ">
+        {/* <ToastContainer />
+          <FilterRender /> */}
+        {/* <FramerMotion /> */}
+        <MainTab
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          data={data}
+        />
       </div>
     </UserContext.Provider>
   );

@@ -1,0 +1,21 @@
+.active_tab_btn {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.tab_btn {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.component_wrapper {
+  background-color: black;
+  color: #ffffff;
+  height: 400px;
+  display: none;
+}
+
+.active {
+  background-color: red;
+  display: block;
+}

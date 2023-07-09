@@ -1,0 +1,6 @@
+.stroke-class {
+  /* color: brown; */
+  -webkit-text-fill-color: transparent;
+  font-size: 12rem;
+  -webkit-text-stroke-width: 2px; /* Stroke width and color */
+}

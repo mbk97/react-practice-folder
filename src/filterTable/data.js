@@ -1,0 +1,51 @@
+export const data = [
+  {
+    id: 1,
+    firstName: "Mubarak",
+    lastName: "Muhammed",
+    email: "mbk@gmail.com",
+    country: "Ghana",
+  },
+  {
+    id: 2,
+    firstName: "Ridwan",
+    lastName: "Adetunji",
+    email: "rid@gmail.com",
+    country: "England",
+  },
+  {
+    id: 3,
+    firstName: "Samuel",
+    lastName: "Faruna",
+    email: "sam@gmail.com",
+    country: "Germany",
+  },
+  {
+    id: 4,
+    firstName: "Adeola",
+    lastName: "Afolabi",
+    email: "afo@gmail.com",
+    country: "Belgium",
+  },
+  {
+    id: 5,
+    firstName: "Ahmed",
+    lastName: "Alimi",
+    email: "alimi@gmail.com",
+    country: "Nigeria",
+  },
+  {
+    id: 6,
+    firstName: "Folarin",
+    lastName: "Odumosu",
+    email: "fola@gmail.com",
+    country: "Egypt",
+  },
+  {
+    id: 7,
+    firstName: "Victor",
+    lastName: "Fortune",
+    email: "vic@gmail.com",
+    country: "Argentina",
+  },
+];
