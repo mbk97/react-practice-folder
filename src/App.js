@@ -8,6 +8,7 @@ import FilterRender from "./filterTable/FilterRender";
 import FramerMotion from "./FramerMotion/FramerMotion";
 import MainTab from "./tabs/MainTab";
 import { data } from "./tabs/data";
+import ToolkitPractice from "./toolkit-practice/ToolkitPractice";
 
 const App = () => {
   const [name, setName] = useState("Mubarak");
@@ -19,11 +20,12 @@ const App = () => {
         {/* <ToastContainer />
           <FilterRender /> */}
         {/* <FramerMotion /> */}
-        <MainTab
+        {/* <MainTab
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           data={data}
-        />
+        /> */}
+        <ToolkitPractice />
       </div>
     </UserContext.Provider>
   );
