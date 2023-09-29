@@ -9,6 +9,7 @@ import FramerMotion from "./FramerMotion/FramerMotion";
 import MainTab from "./tabs/MainTab";
 import { data } from "./tabs/data";
 import ToolkitPractice from "./toolkit-practice/ToolkitPractice";
+import UseReducerPractice from "./UseReducerPractice/UseReducerPractice";
 
 const App = () => {
   const [name, setName] = useState("Mubarak");
@@ -25,7 +26,7 @@ const App = () => {
           setActiveTab={setActiveTab}
           data={data}
         /> */}
-        <ToolkitPractice />
+        <UseReducerPractice />
       </div>
     </UserContext.Provider>
   );
